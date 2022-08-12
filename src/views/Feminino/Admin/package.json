@@ -1,0 +1,6 @@
+{
+  "name": "FemAdmin",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Admin.js"
+}

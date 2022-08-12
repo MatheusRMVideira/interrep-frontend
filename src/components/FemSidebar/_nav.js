@@ -12,13 +12,13 @@ export default {
     },
     */
     {
-    name: 'Ir para o Feminino',
-    url: '/feminino/home',
+    name: 'Ir para a Série A',
+    url: '/home',
     icon: 'icon-people',
     },
     {
     name: 'Seu time',
-    url: '/team',
+    url: '/feminino/team',
     icon: 'icon-people',
     //badge: {
       //variant: 'warning',
@@ -27,7 +27,7 @@ export default {
     },
     {
       name: 'Ranking',
-      url: '/ranking',
+      url: '/feminino/ranking',
       icon: 'icon-chart',
       //badge: {
         //variant: 'warning',
@@ -36,7 +36,7 @@ export default {
     },
     {
       name: 'Seleção da Rodada',
-      url: '/most-points',
+      url: '/feminino/most-points',
       icon: 'icon-star',
       //badge: {
         //variant: 'warning',
@@ -45,7 +45,7 @@ export default {
     },
     {
       name: 'Mais Escalados',
-      url: '/most-choosen',
+      url: '/feminino/most-choosen',
       icon: 'icon-pie-chart',
       //badge: {
         //variant: 'warning',
@@ -54,7 +54,7 @@ export default {
     },
     {
       name: 'Notícias',
-      url: '/news',
+      url: '/feminino/news',
       icon: 'icon-book-open ',
       //badge: {
         //variant: 'warning',
@@ -63,7 +63,7 @@ export default {
     },
     {
       name: 'Saiba mais',
-      url: '/about',
+      url: '/feminino/about',
       icon: 'icon-info',
       //badge: {
         //variant: 'warning',
@@ -73,7 +73,7 @@ export default {
     {
       permission: 'admin_panel',
       name: 'Admin',
-      url: '/admin',
+      url: '/feminino/admin',
       icon: 'icon-key',
       badge: {
         variant: 'warning',
