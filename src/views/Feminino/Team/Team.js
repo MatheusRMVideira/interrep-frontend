@@ -121,7 +121,7 @@ class Team extends Component {
             }
             let teamValue = 0;
             for(let p in response.data.players){
-                if(response.data.players[p].position=="Goleiro"){
+                if(response.data.players[p].position=="Goleira"){
                     goalkeeper = {
                         id: response.data.players[p].id,
                         name: response.data.players[p].name,
@@ -342,7 +342,7 @@ class Team extends Component {
                         <ReactTable
                         getTdProps={(state, row, col, instance) => ({
                           onClick: (event, cb) => {
-                              if(row.original.position=="Goleiro" && !this.state.goalkeeper.id){
+                              if(row.original.position=="Goleira" && !this.state.goalkeeper.id){
                                   let newValue = this.state.teamValue;
                                   let ownCoins = this.state.femCoins;
                                   newValue += row.original.value;

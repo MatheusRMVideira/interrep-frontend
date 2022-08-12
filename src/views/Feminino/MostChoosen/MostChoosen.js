@@ -71,7 +71,7 @@ class MostChoosen extends Component {
       })
       .then((response) => {
         let choosen = response.data;
-        this.setState({'goleiro':choosen.Goleiro});
+        this.setState({'goleiro':choosen.Goleira});
         this.setState({'linha':choosen.Linha});
         console.log(choosen);
       })
@@ -85,14 +85,14 @@ class MostChoosen extends Component {
       <div className="animated fadeIn" style={{fontFamily: 'Lato', paddingTop: '10px'}}>
         <Row>
           <Col xs="12" sm="12" lg="12">
-            <Banner title="JOGADORES MAIS ESCALADOS" fontWeight="bold" backgroundColor="primary"/>
+            <Banner title="JOGADORAS MAIS ESCALADAS" fontWeight="bold" backgroundColor="primary"/>
           </Col>
           <Col xs="12" sm="12" lg="12">
             {
               this.state.goleiro.map((p)=>(
                 <Card key={p.id}>
                   <CardHeader>
-                    <i className="fa fa-user"></i>{p.name+" - ESCALADO EM "+p.n_teams+" TIMES"}
+                    <i className="fa fa-user"></i>{p.name+" - ESCALADA EM "+p.n_teams+" TIMES"}
                   </CardHeader>
                   <CardBody>
                     <Row>
@@ -117,7 +117,7 @@ class MostChoosen extends Component {
               this.state.linha.map((p)=>(
                 <Card key={p.id}>
                   <CardHeader>
-                    <i className="fa fa-user"></i>{p.name+" - ESCALADO EM "+p.n_teams+" TIMES"}
+                    <i className="fa fa-user"></i>{p.name+" - ESCALADA EM "+p.n_teams+" TIMES"}
                   </CardHeader>
                   <CardBody>
                     <Row>

@@ -29,16 +29,22 @@ class Header extends Component {
   }
 
   render() {
+    const location = window.location.href;
+    let title;
+    if(location.includes("feminino")){
+      title = "Torneio Top Meat Interrep Feminino";
+    } else {
+      title = "Torneio Top Meat Interrep Série A";
+    }
     return (
       <header className="app-header navbar">
         <NavbarToggler className="d-lg-none" onClick={this.mobileSidebarToggle}>
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span><span className="pl-4">{title}</span>
         </NavbarToggler>
         <NavbarBrand href="#"></NavbarBrand>
         <NavbarToggler className="d-md-down-none mr-auto" onClick={this.sidebarToggle}>
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span><span className="pl-4">{title}</span>
         </NavbarToggler>
-
       </header>
     );
   }

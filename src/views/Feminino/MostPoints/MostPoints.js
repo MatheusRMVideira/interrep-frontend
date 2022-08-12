@@ -71,7 +71,7 @@ class MostPoints extends Component {
       })
       .then((response) => {
         let points = response.data;
-        this.setState({'goleiro':points.Goleiro});
+        this.setState({'goleiro':points.Goleira});
         this.setState({'linha':points.Linha});
         console.log(points);
       })

@@ -49,7 +49,7 @@ class Home extends Component {
           games: [],
           newPlayerName: "",
           newPlayerRepublicId: 0,
-          newPlayerPosition: "Goleiro",
+          newPlayerPosition: "Goleira",
           newPlayerValue: "",
           newPlayerBenched: "False",
           newGameRepublicHomeId: 0,
@@ -688,7 +688,7 @@ class Home extends Component {
                         </InputGroupText>
                       </InputGroupAddon>
                       <select name="newPlayerPosition" className="form-control" value={this.state.newPlayerPosition} onChange={this.handleChange.bind(this)}>
-                        <option value="Goleiro">Goleiro</option>
+                        <option value="Goleira">Goleira</option>
                         <option value="Linha">Linha</option>
                       </select>
                     </InputGroup>

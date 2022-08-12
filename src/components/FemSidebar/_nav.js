@@ -44,7 +44,7 @@ export default {
       //}
     },
     {
-      name: 'Mais Escalados',
+      name: 'Mais Escaladas',
       url: '/feminino/most-choosen',
       icon: 'icon-pie-chart',
       //badge: {
